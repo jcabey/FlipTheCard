@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.logging.Handler;
 
 public class Easy extends AppCompatActivity {
 
@@ -220,6 +221,158 @@ public class Easy extends AppCompatActivity {
             iv.setImageResource(image206);
         }
 
+        if (cardNumber == 1)
+        {
+            firstCard = cardArray[card];
+            if (firstCard > 200)
+            {
+                firstCard = firstCard - 100;
+            }
+            cardNumber = 2;
+            clickedFirst = card;
+
+            iv.setEnabled(false);
+        }
+        else if (cardNumber == 2)
+        {
+            secondCard = cardArray[card];
+            if (secondCard > 200)
+            {
+                secondCard = secondCard - 100;
+            }
+            cardNumber = 1;
+            clickedSecond = card;
+
+            iv11.setEnabled(false);
+            iv12.setEnabled(false);
+            iv13.setEnabled(false);
+            iv14.setEnabled(false);
+            iv21.setEnabled(false);
+            iv22.setEnabled(false);
+            iv23.setEnabled(false);
+            iv24.setEnabled(false);
+            iv31.setEnabled(false);
+            iv32.setEnabled(false);
+            iv33.setEnabled(false);
+            iv34.setEnabled(false);
+
+
+            android.os.Handler handler = new android.os.Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    calculate();
+                }
+            },1000);
+        }
+
+    }
+
+    //check if the selected images are equal and if equal hide the matching pair
+    private void calculate()
+    {
+        if (clickedFirst == clickedSecond)
+        {
+            if (clickedFirst == 0)
+            {
+                iv11.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 1)
+            {
+                iv12.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 2)
+            {
+                iv13.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 3)
+            {
+                iv14.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 4)
+            {
+                iv21.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 5)
+            {
+                iv22.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 6)
+            {
+                iv23.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 7)
+            {
+                iv24.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 8)
+            {
+                iv31.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 9)
+            {
+                iv32.setVisibility(View.INVISIBLE);
+            }else if (clickedFirst == 10)
+            {
+                iv33.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedFirst == 11)
+            {
+                iv34.setVisibility(View.INVISIBLE);
+            }
+
+
+            if (clickedSecond == 0)
+            {
+                iv11.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 1)
+            {
+                iv12.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 2)
+            {
+                iv13.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 3)
+            {
+                iv14.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 4)
+            {
+                iv21.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 5)
+            {
+                iv22.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 6)
+            {
+                iv23.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 7)
+            {
+                iv24.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 8)
+            {
+                iv31.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 9)
+            {
+                iv32.setVisibility(View.INVISIBLE);
+            }else if (clickedSecond == 10)
+            {
+                iv33.setVisibility(View.INVISIBLE);
+            }
+            else if (clickedSecond == 11)
+            {
+                iv34.setVisibility(View.INVISIBLE);
+            }
+
+
+
+        }
     }
 
 
