@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_76d0c28f369647147884cf6a0bc2a6db19b7155e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3cbd1e4020e6a90730e0c4548a342559eed748c2">
+        <dex dex="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b49352bfc87b1602dba12f11818a7fd47eecb7e8\classes.dex" />
+    </item>
+
+</items>

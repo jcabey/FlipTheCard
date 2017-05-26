@@ -1,5 +1,3 @@
 <resources>
     <string name="app_name">FlipTheCard</string>
-    <string name="score">Score: 0</string>
-    <string name="trys">Trys: 0</string>
 </resources>

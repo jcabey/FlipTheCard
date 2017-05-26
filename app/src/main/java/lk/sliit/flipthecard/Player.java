@@ -21,6 +21,14 @@ public class Player {
         return score;
     }
 
+    public void increaseScore() {
+        score = score + 10;
+    }
+
+    public void decreaseScore() {
+        score = score - 10;
+    }
+
     public void setScore(int score) {
         this.score = score;
     }
@@ -31,6 +39,10 @@ public class Player {
 
     public void setTrys(int trys) {
         this.trys = trys;
+    }
+
+    public void increaseTrys() {
+        trys++;
     }
 
     public int getHighEasy() {
