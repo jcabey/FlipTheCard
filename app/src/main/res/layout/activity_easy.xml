@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/minimalistsymbols"
     tools:context="lk.sliit.flipthecard.Easy">
 
     <include
+        android:id="@+id/include"
         layout="@layout/easy_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="320dp"
-        android:layout_alignParentBottom="true"
+        android:layout_width="360dp"
+        android:layout_height="400dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="64dp"
-        android:id="@+id/include" />
+        android:layout_below="@+id/tv_score"
+        android:layout_marginTop="26dp" />
 
     <TextView
         android:id="@+id/tv_score"
@@ -23,10 +24,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
         android:text="Score: 0"
+        android:textColor="#E0E0E0"
         android:textSize="32dp"
         android:textStyle="bold" />
 
@@ -34,13 +36,13 @@
         android:id="@+id/tv_trys"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/tv_score"
-        android:layout_alignBottom="@+id/tv_score"
+        android:layout_above="@+id/include"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="Trys: 0"
+        android:textColor="#E0E0E0"
         android:textSize="32dp"
         android:textStyle="bold" />
 

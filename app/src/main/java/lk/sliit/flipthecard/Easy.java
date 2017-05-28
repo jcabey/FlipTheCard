@@ -4,19 +4,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.Cursor;
-import android.media.Image;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
-import java.util.logging.Handler;
+
 
 public class Easy extends AppCompatActivity {
 
@@ -35,7 +31,7 @@ public class Easy extends AppCompatActivity {
     private int clickedFirst, clickedSecond;
     private int cardNumber = 1;
 
-    private  int easyHigh, normalHigh, hardHigh, timeTrialHigh;
+    private  int easyHigh;
 
     private static final int DEFAULT = -9000;
 
@@ -48,12 +44,9 @@ public class Easy extends AppCompatActivity {
         //Get the highscores from shared preferences
         SharedPreferences sharedPreferences = getSharedPreferences("HighScore", Context.MODE_PRIVATE);
         easyHigh = sharedPreferences.getInt("easy",DEFAULT);
-        normalHigh = sharedPreferences.getInt("normal",DEFAULT);
-        hardHigh = sharedPreferences.getInt("hard",DEFAULT);
-        timeTrialHigh = sharedPreferences.getInt("timetrial",DEFAULT);
 
         //Initialize player class -- Values taken from shared preferences --
-        player = new Player(0,0,easyHigh,normalHigh,hardHigh,timeTrialHigh);
+        player = new Player(0,0,easyHigh);
 
 
         tv_score = (TextView) findViewById(R.id.tv_score);
@@ -85,7 +78,7 @@ public class Easy extends AppCompatActivity {
         iv33.setTag("10");
         iv34.setTag("11");
 
-        //This method sets the image resources to the above decalared interger varaibles
+        //This method sets the image resources to the above declared integer variables
         declareImageResources();
 
         //Shuffle the images
@@ -530,7 +523,7 @@ public class Easy extends AppCompatActivity {
         alertDialogBuilder
                 .setMessage(m1 + player.getScore() + m2 + player.getTrys())
                 .setCancelable(false)
-                .setPositiveButton("Restart", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Try Again", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intent = new Intent(getApplicationContext(),Easy.class);
@@ -541,7 +534,7 @@ public class Easy extends AppCompatActivity {
                 .setNegativeButton("Main Menu", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                        Intent intent = new Intent(getApplicationContext(),Home.class);
                         startActivity(intent);
                         finish();
                     }

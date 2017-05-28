@@ -6,15 +6,12 @@ package lk.sliit.flipthecard;
 
 public class Player {
 
-    private int score, trys, highEasy, highNormal, highHard, highTimeTrial;
+    private int score, trys, highEasy;
 
-    public Player(int score, int trys, int highEasy, int highNormal, int highHard, int highTimeTrial) {
+    public Player(int score, int trys, int highEasy) {
         this.score = score;
         this.trys = trys;
         this.highEasy = highEasy;
-        this.highNormal = highNormal;
-        this.highHard = highHard;
-        this.highTimeTrial = highTimeTrial;
     }
 
     public int getScore() {
@@ -53,27 +50,4 @@ public class Player {
         this.highEasy = highEasy;
     }
 
-    public int getHighNormal() {
-        return highNormal;
-    }
-
-    public void setHighNormal(int highNormal) {
-        this.highNormal = highNormal;
-    }
-
-    public int getHighHard() {
-        return highHard;
-    }
-
-    public void setHighHard(int highHard) {
-        this.highHard = highHard;
-    }
-
-    public int getHighTimeTrial() {
-        return highTimeTrial;
-    }
-
-    public void setHighTimeTrial(int highTimeTrial) {
-        this.highTimeTrial = highTimeTrial;
-    }
 }

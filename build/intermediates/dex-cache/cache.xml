@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="E:\New folder\FlipTheCard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
-        <dex dex="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_76d0c28f369647147884cf6a0bc2a6db19b7155e\classes.dex" />
+        <dex dex="E:\New folder\FlipTheCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_1f4cd78928057e9a8df3b3c278a86b275dd7de15\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="E:\New folder\FlipTheCard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3cbd1e4020e6a90730e0c4548a342559eed748c2">
-        <dex dex="C:\Users\Chanuka\Desktop\FlipTheCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b49352bfc87b1602dba12f11818a7fd47eecb7e8\classes.dex" />
+        sha1="9fe872c420646e0b88d04ece55fc77245c27e772">
+        <dex dex="E:\New folder\FlipTheCard\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_d22e3cd525e5d2f154f95e4b6f17d5a1de9d0e38\classes.dex" />
     </item>
 
 </items>
